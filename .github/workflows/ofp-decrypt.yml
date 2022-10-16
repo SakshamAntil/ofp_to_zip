@@ -12,14 +12,15 @@ on:
       devicetype:
         description: 'Specify Your Device type. { For Qualcomm (QC) FOR MEDIATEK (MTK) }'
         required: true
+        default: 'MTK'
       simage:
         description: 'Do you want to merege super images, if yes then type <YES>'
         required: false
-        default: 'NO'
+        default: 'YES'
       bigfile:
         description: 'Set to YES if your ofp file is more than 8GB. Setting to yes will take more time.'
         required: false
-        default: 'NO'        
+        default: 'YES'        
 
 env:
   OFP_LINK: ${{ github.event.inputs.ofp_link }}
